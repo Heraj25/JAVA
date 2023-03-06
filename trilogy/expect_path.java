@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class expect_path {
     int solve(int A) {
-        int step=0;
+        //int step=0;
         Scanner scan = new Scanner(System.in);
         
         int x = A;
@@ -12,12 +12,13 @@ public class expect_path {
         if(y > 0){
             if(x!=1){
                 x = x/y;
-                step++;
+                //step++;
             }
             else{
                 b = (int)(x*(Math.pow(y,-1))%(Math.pow(10,9)+7));
             }
         }
+        scan.close();
         
         return b;
     }
@@ -30,6 +31,8 @@ public class expect_path {
         expect_path obj = new expect_path();
         
         System.out.println(obj.solve(a));
+
+        sc.close();
     }
 }
 
