@@ -1,5 +1,7 @@
 package linked_list;
 
+
+
 class Node{
     int data;
     Node next;
