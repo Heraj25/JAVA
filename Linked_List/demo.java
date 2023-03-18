@@ -5,7 +5,7 @@ class Node{
     Node next;
 }
 
-public class demoList {
+class DemoList {
     Node head;
     
     public void insert(int data){
@@ -67,10 +67,10 @@ public class demoList {
 }
 
 
-class demo{
+public class demo{
     public static void main(String[] args) {
         
-        demoList list = new demoList();
+        DemoList list = new DemoList();
         list.insert(90);
         list.insert(30);
         list.insert(60);

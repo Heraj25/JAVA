@@ -1,35 +1,18 @@
 package linked_list;
 
+
 class Node{
     int data;
     Node next;
 }
 
-class running{
-    public static void main(String[] args) {
-        
-    
-    reverse_list list = new reverse_list();
+class Listnode {
 
-    list.insert(100);
-    list.insert(90);
-    list.insert(80);
-    list.insert(70);
-
-    list.display();
-
-    }
-}
-
-public class reverse_list {
-   
     Node head;
-    
+
     public void insert(int data){
         Node node = new Node();
         node.data = data;
-        node.next = null;
-
         if(head == null){
             head = node;
         }
@@ -42,18 +25,27 @@ public class reverse_list {
         }
     }
 
-    public void insertAt(){
-        
-    }
-
-    public void display(){
+    public void show(){
         Node node = head;
         while(node.next != null){
             System.out.println(node.data);
             node = node.next;
         }
-        System.out.println(node.data);
+        System.out.println(node.data);  
     }
+}
 
-   
+class Runner{
+    public static void main(String[] args) {
+        
+        Listnode list = new Listnode();
+        list.insert(5);
+        list.insert(45);
+        list.insert(90);
+        list.insert(3);
+
+        list.show();
+        
+
+    }
 }

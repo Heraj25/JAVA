@@ -67,7 +67,7 @@ class min{
 
 }
 
-public class kth_max_min{
+public class KthMaxMin{
     public static void main(String[] args) {
         int num;
         Scanner sc = new Scanner(System.in);

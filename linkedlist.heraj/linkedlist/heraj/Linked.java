@@ -43,7 +43,7 @@ class LinkedList{
 } 
 
 
-class linked{
+class Linked{
     public static void main(String[] args) {
         LinkedList list = new LinkedList();
 
