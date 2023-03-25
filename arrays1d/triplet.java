@@ -13,7 +13,7 @@ class triplet {
                 return true;
             }
 
-            if(count == 3 || target < 0){
+            if(count == 3 || n == 0 || target < 0){
                 return false;
             }
 
