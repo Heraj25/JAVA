@@ -7,6 +7,9 @@
         "Listnode",
         "newarr",
         "newobj",
-        "nums"
+        "nums",
+        "subarray",
+        "tripletexist",
+        "triplethash"
     ]
 }
