@@ -1,23 +1,23 @@
 package linked_list;
 
 
-class Node{
+class Nod{
     int data;
-    Node next;
+    Nod next;
 }
 
 class Listnode {
 
-    Node head;
+    Nod head;
 
     public void insert(int data){
-        Node node = new Node();
+        Nod node = new Nod();
         node.data = data;
         if(head == null){
             head = node;
         }
         else{
-            Node n = head;
+            Nod n = head;
             while(n.next != null){
                 n = n.next;
             }
@@ -26,7 +26,7 @@ class Listnode {
     }
 
     public void show(){
-        Node node = head;
+        Nod node = head;
         while(node.next != null){
             System.out.println(node.data);
             node = node.next;

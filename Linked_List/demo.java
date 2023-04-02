@@ -1,15 +1,15 @@
 package linked_list;
 
-class Node{
+class Nodey{
     int data;
-    Node next;
+    Nodey next;
 }
 
 class DemoList {
-    Node head;
+    Nodey head;
     
     public void insert(int data){
-        Node node = new Node();
+        Nodey node = new Nodey();
         node.data = data;
         node.next = null;
         
@@ -17,7 +17,7 @@ class DemoList {
             head = node;
         }
         else{
-            Node n = head;
+            Nodey n = head;
             while(n.next != null){
                 n = n.next;
             }
@@ -26,7 +26,7 @@ class DemoList {
     }
 
     public void insertAtStart(int data){
-        Node node = new Node();
+        Nodey node = new Nodey();
         node.data = data;
         node.next = null;
         node.next = head;
@@ -34,7 +34,7 @@ class DemoList {
     }
 
     public void insertAt(int index, int data){
-        Node node = new Node();
+        Nodey node = new Nodey();
         node.data = data;
         node.next = null;
 
@@ -42,7 +42,7 @@ class DemoList {
         
 
         */
-        Node n = head; //traverse
+        Nodey n = head; //traverse
         for(int i=0 ; i<index - 1 ; i++){
             if(index == 0){
                 insertAtStart(data);
@@ -57,7 +57,7 @@ class DemoList {
     }
 
     public void show(){
-        Node node = head;
+        Nodey node = head;
         while(node.next != null){
             System.out.println(node.data);
             node = node.next;

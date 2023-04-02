@@ -1,8 +1,8 @@
 package linked_list;
 
-class Node{
+class Noder{
     int data;
-    Node next;
+    Noder next;
 }
 
 class running{
@@ -23,10 +23,10 @@ class running{
 
 public class ReverseList {
    
-    Node head;
+    Noder head;
     
     public void insert(int data){
-        Node node = new Node();
+        Noder node = new Noder();
         node.data = data;
         node.next = null;
 
@@ -34,7 +34,7 @@ public class ReverseList {
             head = node;
         }
         else{
-            Node n = head;
+            Noder n = head;
             while(n.next != null){
                 n = n.next;
             }
@@ -47,7 +47,7 @@ public class ReverseList {
     }
 
     public void display(){
-        Node node = head;
+        Noder node = head;
         while(node.next != null){
             System.out.println(node.data);
             node = node.next;

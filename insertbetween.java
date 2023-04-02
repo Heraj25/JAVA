@@ -3,16 +3,16 @@ import java.util.Scanner;
 
 
 
-class Node{
+class Nodes{
     int data;
-    Node next;
+    Nodes next;
 }
 
 class LinkedList{
 
-    Node head;
+    Nodes head;
     public void insert(int data){
-        Node node = new Node();
+        Nodes node = new Nodes();
         node.data = data;
         node.next = null;
 
@@ -20,7 +20,7 @@ class LinkedList{
             head = node;
         }
         else{
-            Node n = head;  //reference
+            Nodes n = head;  //reference
             while(n.next != null){
                 n = n.next;
             }
@@ -29,7 +29,7 @@ class LinkedList{
     }
 
     public void show(){
-        Node node = new Node();
+        Nodes node = new Nodes();
         while(node.next != null){
             System.out.println(node.data);
             node = node.next;
