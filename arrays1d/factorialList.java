@@ -18,6 +18,7 @@ class GFG{
                 System.out.print(val);
             System.out.println();
         }
+        sca.close();
     }
 }
 
