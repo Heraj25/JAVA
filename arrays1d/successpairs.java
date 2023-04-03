@@ -1,3 +1,6 @@
+
+
+
 package arrays1d;
 
 import java.util.*;
@@ -86,5 +89,6 @@ class successpairs {
 
         successpairs obj = new successpairs();
         System.out.print(obj.successfulPairs(spells, potions, success));
+        sc.close();
     }
 }
