@@ -8,7 +8,7 @@ class Nodes{
     Nodes next;
 }
 
-class LinkedList{
+class LinkedListy{
 
     Nodes head;
     public void insert(int data){
@@ -43,7 +43,7 @@ public class insertbetween {
 
     public static void main(String[] args) {
         
-        LinkedList list = new LinkedList();
+        LinkedListy list = new LinkedListy();
         int x;
         //       int n=10;
         Scanner sc = new Scanner(System.in);
