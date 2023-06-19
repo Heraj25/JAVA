@@ -37,6 +37,7 @@ public class soorting1 {
             System.out.println(new_arr[j]);
         }
 
+        sc.close();
     }
     
 }
