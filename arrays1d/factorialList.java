@@ -23,7 +23,7 @@ class GFG{
 }
 
 class factorialList{
-    public static ArrayList<Integer> factorial(int N) {
+    public ArrayList<Integer> factorial(int N) {
         int[] res = new int[10000]; // initialize result array
         res[0] = 1; // initialize result with 1
 
@@ -56,8 +56,8 @@ class factorialList{
         Scanner sc = new Scanner(System.in);
 
         int N = sc.nextInt();
-
-        ArrayList<Integer> res = factorial(N);
+        factorialList obj = new factorialList();
+        ArrayList<Integer> res = obj.factorial(N);
 
         for (int i = 0; i < res.size(); i++) {
             System.out.print(res.get(i));
