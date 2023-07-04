@@ -65,6 +65,7 @@ public class twosum {
             int tar = sc.nextInt();
             twosum obj = new twosum();
             obj.twoSum(arr, tar);
+            sc.close();
         }
     }
     
