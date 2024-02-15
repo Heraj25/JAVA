@@ -85,7 +85,7 @@ public class LL {
         Node currNode = head;
         Node lastNode = head.next;
 
-        while(lastNode != null){
+        while(lastNode.next != null){
             currNode = currNode.next;
             lastNode = lastNode.next;
         }
@@ -127,6 +127,7 @@ public class LL {
             list.addLast(i);
         }
 
+        list.removeLast();
         list.printList();
 
         System.out.println("Enter the element you want to search from the Linked List: ");
