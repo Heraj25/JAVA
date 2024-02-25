@@ -118,6 +118,6 @@ public class listlinked {
         int n = sc.nextInt();
 
         System.out.print("The index position of the element in the linked list: "+LL.search(n));
-
+        sc.close();
     }
 }
