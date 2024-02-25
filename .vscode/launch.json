@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "cyclic_rotation",
+            "request": "launch",
+            "mainClass": "arrays1d.cyclic_rotation",
+            "projectName": "JAVA_d592f5b7"
+        },
+        {
+            "type": "java",
+            "name": "practice1hashing",
+            "request": "launch",
+            "mainClass": "hashmaps.practice1hashing",
+            "projectName": "JAVA_d592f5b7"
+        },
+        {
+            "type": "java",
+            "name": "findnums",
+            "request": "launch",
+            "mainClass": "strings.findnums",
+            "projectName": "JAVA_d592f5b7"
+        },
+        {
+            "type": "java",
+            "name": "linked_list",
+            "request": "launch",
+            "mainClass": "linked_list",
+            "projectName": "JAVA_d592f5b7"
+        },
+        {
+            "type": "java",
+            "name": "practicelinkedlist",
+            "request": "launch",
+            "mainClass": "practicelinkedlist",
+            "projectName": "JAVA_d592f5b7"
+        },
+        {
+            "type": "java",
             "name": "practicehashing",
             "request": "launch",
             "mainClass": "hashmaps.practicehashing",
