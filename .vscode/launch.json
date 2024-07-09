@@ -6,6 +6,55 @@
     "configurations": [
         {
             "type": "java",
+            "name": "list_llinked",
+            "request": "launch",
+            "mainClass": "list_llinked",
+            "projectName": "JAVA_d592f5b7"
+        },
+        {
+            "type": "java",
+            "name": "bitwiseSubsequence",
+            "request": "launch",
+            "mainClass": "infosys_coding.bitwiseSubsequence",
+            "projectName": "JAVA_d592f5b7"
+        },
+        {
+            "type": "java",
+            "name": "uniqueGift",
+            "request": "launch",
+            "mainClass": "infosys_coding.uniqueGift",
+            "projectName": "JAVA_d592f5b7"
+        },
+        {
+            "type": "java",
+            "name": "rpg_maxdefeat_optimized",
+            "request": "launch",
+            "mainClass": "infosys_coding.rpg_maxdefeat_optimized",
+            "projectName": "JAVA_d592f5b7"
+        },
+        {
+            "type": "java",
+            "name": "rpg_maxdefeat",
+            "request": "launch",
+            "mainClass": "infosys_coding.rpg_maxdefeat",
+            "projectName": "JAVA_d592f5b7"
+        },
+        {
+            "type": "java",
+            "name": "empty_chocs",
+            "request": "launch",
+            "mainClass": "tcs_coding.empty_chocs",
+            "projectName": "JAVA_d592f5b7"
+        },
+        {
+            "type": "java",
+            "name": "no_repeat_digits",
+            "request": "launch",
+            "mainClass": "tcs_coding.no_repeat_digits",
+            "projectName": "JAVA_d592f5b7"
+        },
+        {
+            "type": "java",
             "name": "cyclic_rotation",
             "request": "launch",
             "mainClass": "arrays1d.cyclic_rotation",
