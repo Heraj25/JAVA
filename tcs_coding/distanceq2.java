@@ -1,3 +1,5 @@
+package tcs_coding;
+
 import java.util.*;
 import java.math.*;
 
