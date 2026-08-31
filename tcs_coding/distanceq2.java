@@ -1,7 +1,6 @@
 package tcs_coding;
 
 import java.util.*;
-import java.math.*;
 
 class Point {
     private int x, y;
@@ -41,6 +40,7 @@ public class distanceq2 {
 
         double distance = calculateDistance(p1, p2);
         System.out.printf("%.3f", distance);
+        sc.close();
     }
 
     public static double calculateDistance(Point p1, Point p2) {

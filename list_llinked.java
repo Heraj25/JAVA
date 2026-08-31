@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class list_llinked {
     Node head;
     public int size = 0;
@@ -80,6 +82,63 @@ public class list_llinked {
         size--;
     }
 
+    //searching the position of an element in the linked list
+    public void search(int n) {
+        Node curr = head;
+        int count = 0;
+
+        while(curr != null) {
+            if(curr.data == n) {   
+                System.out.println("The element is present in the linked list at the position: "+count);
+                return;
+            } else {
+                curr = curr.next;
+                count++;
+            }
+        }
+        System.out.println("The element is not present in the linked list.");
+    }
+
+    //sorting the linked list ---------->>>>>>> incomplete
+    public void sorting() {
+        Node curr = head;
+        int count = 0;
+
+        while(curr != null) {
+            curr = curr.next;
+            ++count;
+        }
+        System.out.println(count);
+
+        // int[] arr = new int[count]; 
+
+        // List<Integer> result = new LinkedList<>();
+
+    }
+
+    //insert the new element at the sorted position
+    public void insert(int n) {
+        Node curr = head;
+         
+        Node newNode = new Node(n);
+        while(curr.next != null) {
+            if(curr.data > n) {
+                head = newNode;
+                head.next = curr;
+            }
+            
+            else if(curr.data <= n && curr.next.data >= n) {
+                newNode.next = curr.next.next;
+                curr.next = newNode;
+            }
+
+            else {
+                curr.next = newNode;
+            }
+        }
+        return;
+    }
+
 
     public static void main(String[] args) {
         list_llinked obj = new list_llinked();
@@ -89,12 +148,30 @@ public class list_llinked {
         obj.addLast(50);
         obj.printList();
 
-        obj.removeFirst();
+        // obj.removeFirst();
+        // obj.printList();
+        // obj.removeLast();
+        // obj.printList();
+        // obj.removeLast();
+        // obj.printList();
+        // obj.removeFirst();
+
+        System.out.println("Finding the elements position in the linked list");
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the element to search for from the linked list: ");
+        int n = sc.nextInt();
+        //Searching the element in the linked list
+        obj.search(n);
+
+        //sorting the linked list - ascending order
+        //obj.sorting();
+
+        System.out.println("Enter the element to insert into the linked list: ");
+        int x = sc.nextInt();
+        //insert the element at the sorted position
+        obj.insert(x);
         obj.printList();
-        obj.removeLast();
-        obj.printList();
-        obj.removeLast();
-        obj.printList();
-        obj.removeFirst();
+
+        sc.close();
     }
 }

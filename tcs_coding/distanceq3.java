@@ -1,8 +1,6 @@
 package tcs_coding;
 
-import java.io.*;
 import java.util.*;
-import java.math.*;
 
 
 class Point {
@@ -42,6 +40,7 @@ class distanceq3 {
         Point ans = pointWithHighestOriginDistance(p1, p2, p3);
         System.out.println(ans.getX());
         System.out.println(ans.getY());
+        sc.close();
 
     }
 

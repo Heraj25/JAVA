@@ -1,4 +1,4 @@
-import java.util.*;
+
 
 public class tried {
     public static void main(String[] args) {

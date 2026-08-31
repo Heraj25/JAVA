@@ -1,4 +1,5 @@
-import java.io.*;
+package tcs_coding;
+
 import java.util.*;
 
 class Account{
@@ -53,6 +54,7 @@ public class interest {
         int noOfYears = sc.nextInt();
         double final_interest = calculateInterest(acc, noOfYears);
         System.out.printf("%.3f",final_interest); 
+        sc.close();
     }
 
     //new function to calculate the final interest

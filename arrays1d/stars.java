@@ -13,6 +13,7 @@ public class stars {
                 System.out.print("*");
             }
         }
+        sc.close();
     }
     
 }
